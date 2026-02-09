@@ -1,13 +1,11 @@
-# MultiCult
+# MediPath
+
+Collaborative app project with KISJ Biosci &amp; Globalaid Club.
+
+Originally based on the "MultiCult" Flutter application for improving medical access for Jeju's multicultural population.
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-
-
-Application for Jeju Multicultural Population's Better Medical Access
-
 
 ## Technical Stack
 
@@ -16,7 +14,6 @@ Application for Jeju Multicultural Population's Better Medical Access
 - **UI Components**: Material Design
 - **State Management**: StatefulWidget with setState
 - **Platform Support**: iOS, Android, Web, macOS, Linux, Windows
-
 
 ## Getting Started
 
@@ -31,8 +28,8 @@ Application for Jeju Multicultural Population's Better Medical Access
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/MultiCult.git
-cd MultiCult
+git clone https://github.com/easycomputingclub/MediPath.git
+cd MediPath
 ```
 
 2. Install dependencies:
@@ -40,7 +37,7 @@ cd MultiCult
 flutter pub get
 ```
 
-3. Set up OpenAI API integration:
+3. (Optional) Set up OpenAI API integration:
 ```bash
 # Copy the environment template
 cp .env.example .env
@@ -67,19 +64,19 @@ flutter run
 
 ```
 lib/
-├── main.dart          # Entry point and navigation
-├── home.dart          # Home screen implementation
-├── quiz.dart          # Quiz functionality with typing and MCQ
-├── chat.dart          # AI-powered chat with OpenAI integration
-├── settings.dart      # Settings page with editable fields
-├── globals.dart       # Global variables and data
+├── main.dart           # Entry point and navigation
+├── home.dart           # Home screen implementation
+├── quiz.dart           # Quiz functionality with typing and MCQ
+├── chat.dart           # AI-powered chat with OpenAI integration
+├── settings.dart       # Settings page with editable fields
+├── globals.dart        # Global variables and data
 └── openai_service.dart # OpenAI API integration service
 ```
 
-## Key Features Implementation
+## Key Features
 
 ### AI-Powered Chat
-- **OpenAI Integration**: Real-time conversations with GPT-3.5-turbo
+- **OpenAI Integration**: Real-time conversations with GPT models
 - **Language Learning Focus**: Specialized prompts for multicultural language learning
 - **Loading States**: Visual feedback during API calls
 - **Error Handling**: Graceful fallbacks for network issues
@@ -95,17 +92,16 @@ lib/
 - **Birth Year Picker**: Smooth scrollable wheel picker for year selection
 - **Language Selection**: Expandable dropdown with flag and name display
 
-### Quiz System
-- Interactive quiz interface
-- Cultural awareness questions
-- Engaging user experience
-
 ### Multi-Platform Support
 - Responsive design for different screen sizes
 - Platform-specific adaptations
 - Consistent user experience across devices
 
-
 ## Authors
 
-- **Joy Kim, Sang Ahn, Ethan Cho, Soomin Kim, Alisa Kim, Zijun Huang**
+- Joy Kim
+- Sang Ahn
+- Ethan Cho
+- Soomin Kim
+- Alisa Kim
+- Zijun Huang
