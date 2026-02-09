@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Multicult App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         primaryColor: Colors.deepPurple,
@@ -87,8 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(), // 0: Home
     QuizPage(), // 1: Quiz
-    ChatPage(), // 2: Chat
-    SettingPage(), // 3: Settings
+    SettingPage(), // 2: Settings
   ];
 
   void _onItemTapped(int index) {
@@ -123,10 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.quiz),
             label: 'Quiz',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat_bubble_outline),
-            label: 'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
